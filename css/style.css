@@ -1,0 +1,137 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  background: #ccccc8;
+  float: left;
+  text-align: center;
+
+}
+
+.lake {
+  width: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Helvetica';
+  position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+
+}
+
+
+h2 {
+  font-size: 70px;
+  font-weight: 400;
+  font-family: 'Stalemate', 'Helvetica';
+  color: #989898;
+  position: absolute;
+   top: 250px;
+   left: 0;
+   width: 100%;
+
+}
+
+
+.navigation {
+  float: left;
+  width: 40%;
+  padding: 20px;
+  padding-left: 100px;
+}
+
+.main-text {
+  float: right;
+  width: 60%;
+  padding: 20px;
+  padding-right: 100px;
+  text-align: justify;
+  font-family: 'Raleway', 'Helvetica';
+
+}
+
+a {
+  color: black;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: 'Stalemate', 'Helvetica';
+
+}
+/* Old styling I was considering and don't want to delete just yet
+.first {
+  background: #ccccc8;
+  float: left;
+  width: 25%;
+  font-weight: bold;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Federo', 'Helvetica';
+  padding: 20px;
+  text-align: center;
+}
+
+.second {
+  background: #7a7670;
+  float: left;
+  width: 25%;
+  font-weight: bold;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Federo', 'Helvetica';
+  padding: 20px;
+  text-align: center;
+}
+
+.third {
+  background: #d3d3d3;
+  float: left;
+  width: 25%;
+  font-weight: bold;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Federo', 'Helvetica';
+  padding: 20px;
+  text-align: center;
+}
+
+
+.fourth {
+  background: #604e61;
+  float: left;
+  width: 25%;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Federo', 'Helvetica';
+  padding: 20px;
+  text-align: center;
+}*/
+
+/*aside {
+  background: green;
+  float: right;
+  width: 40%;
+}
+footer {
+  background: blue;
+  float: left;
+  width: 100%;
+}*/
