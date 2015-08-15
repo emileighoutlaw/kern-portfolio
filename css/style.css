@@ -2,48 +2,60 @@
 
 * {
   box-sizing: border-box;
-
 }
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+
+.hero {
+  background-image: url(../images/metro.jpg);
+  background-size: cover;
+
+  color: white;
+
+  height: calc(100vh - 50px);
+
+
+
+/* Hey future Emileigh: This is flex box. it lets you center things and is amazing!*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.block {
+
+  background-color: black;
+  padding: 40px;
 
 }
 
 
-.wrapper {
-  width: 100%;
-  max-width: 960px;
-  margin: 0px auto;
 
-}
 
-#header {
-  position: relative;
-  width: 100%;
-  background: #ccccc8;
-  float: left;
-  text-align: center;
+a {
+  color: black;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: 'Stalemate', 'Helvetica';
 
-}
-
-.image {
-  width: 100%;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
 }
 
 h1 {
   font-size: 50px;
   font-weight: 400;
   font-family: 'Raleway', 'Helvetica';
-  position: absolute;
-   top: 200px;
+  /*position: absolute;
+   top: 100px;
    left: 0;
-   width: 100%;
-
+   width: 100%;*/
 }
 
 
@@ -52,19 +64,23 @@ h2 {
   font-weight: 400;
   font-family: 'Stalemate', 'Helvetica';
   color: #989898;
-  position: absolute;
-   top: 250px;
+  /*position: absolute;
+   top: 150px;
    left: 0;
-   width: 100%;
+   width: 100%;*/
 
 }
 
+#header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
 
-.navigation {
-  float: left;
-  width: 40%;
-  padding: 20px;
-  padding-left: 100px;
+.image {
+  width: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 
 .main-text {
@@ -74,72 +90,61 @@ h2 {
   padding-right: 100px;
   text-align: justify;
   font-family: 'Raleway', 'Helvetica';
-
 }
 
-.link {
-  color: black;
-  font-size: 40px;
-  text-decoration: none;
-  font-family: 'Stalemate', 'Helvetica';
-
-}
-/* Old styling I was considering and don't want to delete just yet
-.first {
-  background: #ccccc8;
+.navigation {
   float: left;
-  width: 25%;
-  font-weight: bold;
-  font-size: 100px;
-  font-weight: 400;
-  font-family: 'Raleway', 'Federo', 'Helvetica';
-  padding: 20px;
-  text-align: center;
-}
-
-.second {
-  background: #7a7670;
-  float: left;
-  width: 25%;
-  font-weight: bold;
-  font-size: 100px;
-  font-weight: 400;
-  font-family: 'Raleway', 'Federo', 'Helvetica';
-  padding: 20px;
-  text-align: center;
-}
-
-.third {
-  background: #d3d3d3;
-  float: left;
-  width: 25%;
-  font-weight: bold;
-  font-size: 100px;
-  font-weight: 400;
-  font-family: 'Raleway', 'Federo', 'Helvetica';
-  padding: 20px;
-  text-align: center;
-}
-
-
-.fourth {
-  background: #604e61;
-  float: left;
-  width: 25%;
-  font-size: 100px;
-  font-weight: 400;
-  font-family: 'Raleway', 'Federo', 'Helvetica';
-  padding: 20px;
-  text-align: center;
-}*/
-
-/*aside {
-  background: green;
-  float: right;
   width: 40%;
+  padding: 20px;
+  padding-left: 100px;
 }
-footer {
-  background: blue;
-  float: left;
+
+.wrapper {
   width: 100%;
-}*/
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+
+/*Media accessibility stylings*/
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        margin: 0px auto;
+    }
+
+    .navigation {
+      width: 100%;
+      background-color: #D9D9F3;
+
+    }
+
+    .list {
+      font-size: 15px;
+      font-family: 'Raleway', 'Helvetica';
+      line-height: 200%;
+      width: 50%;
+}
+
+
+    .main-text {
+      width: 100%;
+      padding: 20px;
+      text-align: justify;
+    }
+
+    h1  {
+       top: 10px;
+       font-size: 30px;
+
+    }
+
+    h2  {
+      top: 50px;
+      font-size: 50px;
+
+    }
+
+  }
