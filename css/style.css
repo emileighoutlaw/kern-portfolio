@@ -12,11 +12,9 @@
 
 
 .hero {
-  background-image: url(../images/metro.jpg);
+  background-image: url(../images/mountain2.jpg);
   background-size: cover;
-
   color: white;
-
   height: calc(100vh - 50px);
 
 
@@ -117,7 +115,6 @@ h2 {
 
     .navigation {
       width: 100%;
-      background-color: #D9D9F3;
 
     }
 
