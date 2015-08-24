@@ -12,7 +12,7 @@
 
 .navigation {
   display: inline-flex;
-  padding: 20px;
+  margin: 15px;
 }
 
 .hero {
@@ -35,6 +35,10 @@
   margin-top: 50px;
 }
 
+.list {
+  padding: 10px;
+
+}
 
 a {
   color: black;
@@ -64,16 +68,39 @@ h2 {
 .main-text {
   width: 100%;
   padding: 20px;
-  padding-right: 100px;
+  height: 100px;
   text-align: justify;
   font-family: 'Raleway', 'Helvetica';
 }
 
 .wrapper {
-  max-width: 960px;
+  max-width: 1150px;
   margin: 0px auto;
+  /*background-color: #e3f2f9;*/
 }
 
+
+input[type=text] {
+  font-family: 'Raleway', 'Helvetica';
+  padding: 5px;
+  margin-top: 20px;
+}
+
+input[type=email] {
+  font-family: 'Raleway', 'Helvetica';
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.dropDown {
+  margin-top: 20px;
+
+}
+
+.submissionField {
+  width: 300px;
+  height: 100px;
+}
 
 /*Media accessibility stylings*/
 
@@ -84,35 +111,14 @@ h2 {
         margin: 0px auto;
     }
 
-    /*.navigation {
-      width: 100%;
-
-    }
-
-    .list {
-      font-size: 15px;
-      font-family: 'Raleway', 'Helvetica';
-      line-height: 200%;
-      width: 50%;
-}*/
-
-
-    .main-text {
-      width: 100%;
-      padding: 20px;
-      text-align: justify;
-    }
-
     h1  {
        top: 10px;
        font-size: 30px;
-
     }
 
     h2  {
       top: 50px;
       font-size: 50px;
-
     }
 
   }
