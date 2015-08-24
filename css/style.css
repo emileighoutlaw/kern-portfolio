@@ -10,32 +10,30 @@
   clear: both;
 }
 
+.navigation {
+  display: inline-flex;
+  padding: 20px;
+}
 
 .hero {
-  background-image: url(../images/mountain2.jpg);
+  background-image: url(../images/california.jpg);
   background-size: cover;
   color: white;
-  height: calc(100vh - 50px);
-
-
-
+  height: calc(100vh);
 /* Hey future Emileigh: This is flex box. it lets you center things and is amazing!*/
-
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-
+/* Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
+  justify-content: space-between;*/
 }
 
 .block {
-
-  background-color: black;
+  background-image: url(../images/block.jpg);
   padding: 40px;
-
+  text-align: center;
+  margin-top: 50px;
 }
-
-
 
 
 a {
@@ -43,11 +41,10 @@ a {
   font-size: 40px;
   text-decoration: none;
   font-family: 'Stalemate', 'Helvetica';
-
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
   font-family: 'Raleway', 'Helvetica';
   /*position: absolute;
@@ -58,47 +55,21 @@ h1 {
 
 
 h2 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 400;
   font-family: 'Stalemate', 'Helvetica';
-  color: #989898;
-  /*position: absolute;
-   top: 150px;
-   left: 0;
-   width: 100%;*/
-
-}
-
-#header {
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-
-.image {
-  width: 100%;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  color: white;
 }
 
 .main-text {
-  float: right;
-  width: 60%;
+  width: 100%;
   padding: 20px;
   padding-right: 100px;
   text-align: justify;
   font-family: 'Raleway', 'Helvetica';
 }
 
-.navigation {
-  float: left;
-  width: 40%;
-  padding: 20px;
-  padding-left: 100px;
-}
-
 .wrapper {
-  width: 100%;
   max-width: 960px;
   margin: 0px auto;
 }
@@ -113,7 +84,7 @@ h2 {
         margin: 0px auto;
     }
 
-    .navigation {
+    /*.navigation {
       width: 100%;
 
     }
@@ -123,7 +94,7 @@ h2 {
       font-family: 'Raleway', 'Helvetica';
       line-height: 200%;
       width: 50%;
-}
+}*/
 
 
     .main-text {
