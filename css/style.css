@@ -10,13 +10,36 @@
   clear: both;
 }
 
-.navigation {
-  display: inline-flex;
-  padding: 20px;
+
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Raleway', 'Helvetica';
+}
+
+.block {
+  text-align: center;
+  margin: 100px;
+}
+
+h1 {
+  font-size: 200px;
+  font-weight: 400;
+  font-family:  'Stalemate', 'Helvetica';
+}
+
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Helvetica';
+  color: white;
+  padding-bottom: 30px;
 }
 
 .hero {
-  background-image: url(../images/california.jpg);
+  background-image: url(../images/background2.jpg);
   background-size: cover;
   color: white;
   height: calc(100vh);
@@ -28,52 +51,32 @@
   justify-content: space-between;*/
 }
 
-.block {
-  background-image: url(../images/block.jpg);
-  padding: 40px;
-  text-align: center;
-  margin-top: 50px;
-}
 
 
-a {
-  color: black;
-  font-size: 40px;
-  text-decoration: none;
-  font-family: 'Stalemate', 'Helvetica';
-}
+.list {
+  padding: 20px;
+  margin-bottom: 40px;
 
-h1 {
-  font-size: 40px;
-  font-weight: 400;
-  font-family: 'Raleway', 'Helvetica';
-  /*position: absolute;
-   top: 100px;
-   left: 0;
-   width: 100%;*/
-}
-
-
-h2 {
-  font-size: 50px;
-  font-weight: 400;
-  font-family: 'Stalemate', 'Helvetica';
-  color: white;
 }
 
 .main-text {
   width: 100%;
   padding: 20px;
-  padding-right: 100px;
+  height: 100px;
   text-align: justify;
   font-family: 'Raleway', 'Helvetica';
 }
 
-.wrapper {
-  max-width: 960px;
-  margin: 0px auto;
+.navigation {
+  display: inline-flex;
+  margin: 15px;
 }
 
+.wrapper {
+  max-width: 1150px;
+  margin: 0px auto;
+  /*background-color: #e3f2f9;*/
+}
 
 /*Media accessibility stylings*/
 
@@ -84,35 +87,34 @@ h2 {
         margin: 0px auto;
     }
 
-    /*.navigation {
-      width: 100%;
-
-    }
-
-    .list {
-      font-size: 15px;
-      font-family: 'Raleway', 'Helvetica';
-      line-height: 200%;
-      width: 50%;
-}*/
-
-
-    .main-text {
-      width: 100%;
-      padding: 20px;
-      text-align: justify;
-    }
-
     h1  {
        top: 10px;
-       font-size: 30px;
-
+       font-size: 90px;
     }
 
     h2  {
       top: 50px;
-      font-size: 50px;
-
+      font-size: 40px;
     }
 
   }
+
+
+
+  @media (max-width: 475px) {
+      .wrapper {
+          max-width: 768px;
+          margin: 0px auto;
+      }
+
+      h1  {
+         top: 10px;
+         font-size: 50px;
+      }
+
+      h2  {
+        top: 50px;
+        font-size: 20px;
+      }
+
+    }
