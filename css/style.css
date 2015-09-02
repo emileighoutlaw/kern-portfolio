@@ -87,19 +87,21 @@ h3 {
   font-family: 'Raleway', 'Helvetica';
 }
 
-
-.nav-a-thingy {
-  background-color: #261F19;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 p {
   font-family:  'Raleway', 'Helvetica';
   font-size: 13px;
   line-height: 150%;
+}
+
+
+.poem {
+  display: none;
+  background-color: #DAB2BA;
+  opacity: .7;
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 20%;
+  padding: 20px;
 }
 
 .topBar {
@@ -183,8 +185,6 @@ ul li {
   line-height: 150%;
   padding: 10px;
 }
-
-
 
 
 /*Stylings for "about" page*/
@@ -276,4 +276,13 @@ ul li {
       flex-direction: column;
      Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
       justify-content: space-between;
+    }*/
+    
+    /* THIS IS THE OLD NAV
+    .nav-a-thingy {
+      background-color: #261F19;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
     }*/
