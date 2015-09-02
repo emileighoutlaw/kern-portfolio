@@ -17,6 +17,10 @@ a {
   font-family: 'Raleway', 'Helvetica';
 }
 
+a:hover {
+  color: #DAB2BA;
+}
+
 .block {
   text-align: center;
   padding-top: 175px;
@@ -24,43 +28,6 @@ a {
   float: left;
   width: 50%;
   background-color: #6ED0FF;
-}
-
-.blockTopLeft {
-  float: left;
-  width: 50%;
-  height: 300px;
-  clear: both;
-  text-align: left;
-  /*font-size: 20px;
-  font-family:  'Stalemate', 'Helvetica';*/
-  padding: 20px;
-}
-
-.blockTopRight {
-    float: right;
-    width: 50%;
-    height: 300px;
-    background-color: #6ED0FF;
-    padding: 20px;
-    text-align: justify;
-}
-
-.blockBottomLeft {
-    float: left;
-    width: 50%;
-    background-color: #B3AEB2;
-    padding: 20px;
-    height: 300px;
-}
-
-
-.blockBottomRight {
-    float: right;
-    width: 50%;
-    height: 300px;
-    background-image: url(../images/mural3.jpg);
-
 }
 
 
@@ -72,11 +39,6 @@ a {
   width: 50%;
 }
 
-figure {
-  float: right;
-  margin-right: 20px;
-
-}
 
 h1 {
   font-size: 150px;
@@ -84,12 +46,11 @@ h1 {
   font-family:  'Stalemate', 'Helvetica';
 }
 
-
 h2 {
   font-size: 20px;
   font-weight: 400;
   font-family: 'Raleway', 'Helvetica';
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -99,41 +60,21 @@ h3 {
   margin-top: 20px;
 }
 
-h4 {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: 'Raleway', 'Helvetica';
-  padding-bottom: 30px;
-}
-
-h5 {
-  font-size: 20px;
-  font-weight: 400;
-  font-family:  'Stalemate', 'Helvetica';
-  margin-top: 20px;
-}
 
 .hero {
-  /*color: white;*/
   height: calc(100vh);
   margin-left: 10px;
   margin-right: 10px;
 
 }
 
-/*.hero { THIS IS THE OLD HERO
-  background-image: url(../images/background2.jpg);
-  background-size: cover;
-  color: white;
-  height: calc(100vh);
- Hey future Emileigh: This is flex box. it lets you center things and is amazing!
-  display: flex;
-  align-items: center;
-  flex-direction: column;
- Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
-  justify-content: space-between;
-}*/
 
+.insideNav {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 12px;
+  text-decoration: underline;
+}
 
 .list {
   padding: 10px;
@@ -157,27 +98,16 @@ h5 {
 
 p {
   font-family:  'Raleway', 'Helvetica';
-  font-size: 15px;
+  font-size: 13px;
   line-height: 150%;
 }
 
 .topBar {
   width: 100%;
   height: 40px;
+  padding-top: 10px;
   clear: both;
   text-align: center;
-}
-
-.insideNav {
-  margin-top: 20px;
-  padding: 15px;
-  font-size: 12px;
-  text-decoration: underline;
-}
-
-.topNav{
-  text-align: center;
-  margin-top: 10px;
 }
 
 ul li {
@@ -187,13 +117,110 @@ ul li {
 .wrapper {
   max-width: 1150px;
   margin: 0px auto;
-  /*background-color: #e3f2f9;*/
-  /*background-image: url(../images/woodgrain2.jpg);*/
+}
+
+
+
+/*Stylings for "about" page*/
+
+.bio {
+  width: 50%;
+  float: right;
+}
+
+.blockTopLeft {
+  float: left;
+  width: 50%;
+  height: 300px;
+}
+
+.blockTopRight {
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-color: #6ED0FF;
+    padding: 30px;
+    text-align: justify;
+}
+
+.blockBottomLeft {
+    float: left;
+    width: 50%;
+    background-color: #D7D7DF;
+    padding: 30px;
+    height: 300px;
+}
+
+.blockBottomRight {
+    float: right;
+    width: 50%;
+    height: 300px;
+}
+
+.contact {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Raleway', 'Helvetica';
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 40px;
+  width: 50%;
+  text-align: right;
+}
+
+.image {
+  content:url(../images/biopic.jpg);
+  width: 200px;
+  height: auto;
 
 }
 
-/*Media accessibility stylings*/
+.partners {
+  display: flex;
+  font-family: 'Raleway', 'Helvetica';
+  font-size: 13px;
+  line-height: 150%;
+  padding: 10px;
+}
 
+
+
+
+/*Stylings for "about" page*/
+.projectsTopLeft {
+  float: left;
+  width: 50%;
+  height: 300px;
+  padding: 30px;
+}
+
+.projectsTopRight {
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-color: #D7D7DF;
+    padding: 30px;
+    text-align: justify;
+}
+
+.projectsBottomLeft {
+    float: left;
+    width: 50%;
+    background-color: #DAB2BA;
+    padding: 30px;
+    height: 300px;
+}
+
+.projectsBottomRight {
+    float: right;
+    width: 50%;
+    height: 300px;
+    padding: 30px;
+}
+
+
+/*Media accessibility stylings*/
 
 @media (max-width: 768px) {
     .wrapper {
@@ -232,3 +259,21 @@ ul li {
       }
 
     }
+
+
+
+
+
+
+    /*.hero { THIS IS THE OLD HERO
+      background-image: url(../images/background2.jpg);
+      background-size: cover;
+      color: white;
+      height: calc(100vh);
+     Hey future Emileigh: This is flex box. it lets you center things and is amazing!
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+     Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
+      justify-content: space-between;
+    }*/
