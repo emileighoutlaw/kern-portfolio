@@ -7,6 +7,15 @@ $(document).ready(function() {
 					console.log("hi");
 				});
 
+				$(".poemLink").click(function(){
+						event.preventDefault();
+						$(".poem").show();
+						console.log("hi");
+					});
+
+
+
+
 	    });
 
 
