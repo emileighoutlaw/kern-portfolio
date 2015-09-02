@@ -10,9 +10,8 @@
   clear: both;
 }
 
-
 a {
-  color: white;
+  color: black;
   font-size: 20px;
   text-decoration: none;
   font-family: 'Raleway', 'Helvetica';
@@ -20,11 +19,67 @@ a {
 
 .block {
   text-align: center;
-  margin: 100px;
+  padding-top: 175px;
+  height: calc(100vh);
+  float: left;
+  width: 50%;
+  background-color: #6ED0FF;
+}
+
+.blockTopLeft {
+  float: left;
+  width: 50%;
+  height: 300px;
+  clear: both;
+  text-align: left;
+  /*font-size: 20px;
+  font-family:  'Stalemate', 'Helvetica';*/
+  padding: 20px;
+}
+
+.blockTopRight {
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-color: #6ED0FF;
+    padding: 20px;
+    text-align: justify;
+}
+
+.blockBottomLeft {
+    float: left;
+    width: 50%;
+    background-color: #B3AEB2;
+    padding: 20px;
+    height: 300px;
+}
+
+
+.blockBottomRight {
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-image: url(../images/mural3.jpg);
+
+}
+
+
+.blockRight {
+  background-image: url(../images/mural.jpg);
+  background-size: cover;
+  height: calc(100vh);
+  float: right;
+  width: 50%;
+}
+
+figure {
+  float: right;
+  margin-right: 20px;
+
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 150px;
   font-weight: 400;
   font-family:  'Stalemate', 'Helvetica';
 }
@@ -34,48 +89,107 @@ h2 {
   font-size: 20px;
   font-weight: 400;
   font-family: 'Raleway', 'Helvetica';
-  color: white;
   padding-bottom: 30px;
 }
 
+h3 {
+  font-size: 200px;
+  font-weight: 400;
+  font-family:  'Stalemate', 'Helvetica';
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Raleway', 'Helvetica';
+  padding-bottom: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family:  'Stalemate', 'Helvetica';
+  margin-top: 20px;
+}
+
 .hero {
+  /*color: white;*/
+  height: calc(100vh);
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+/*.hero { THIS IS THE OLD HERO
   background-image: url(../images/background2.jpg);
   background-size: cover;
   color: white;
   height: calc(100vh);
-/* Hey future Emileigh: This is flex box. it lets you center things and is amazing!*/
+ Hey future Emileigh: This is flex box. it lets you center things and is amazing!
   display: flex;
   align-items: center;
   flex-direction: column;
-/* Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
-  justify-content: space-between;*/
-}
-
+ Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
+  justify-content: space-between;
+}*/
 
 
 .list {
-  padding: 20px;
-  margin-bottom: 40px;
-
+  padding: 10px;
 }
 
 .main-text {
   width: 100%;
   padding: 20px;
-  height: 100px;
   text-align: justify;
   font-family: 'Raleway', 'Helvetica';
 }
 
-.navigation {
-  display: inline-flex;
-  margin: 15px;
+
+.nav-a-thingy {
+  background-color: #261F19;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+p {
+  font-family:  'Raleway', 'Helvetica';
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.topBar {
+  width: 100%;
+  height: 40px;
+  clear: both;
+  text-align: center;
+}
+
+.insideNav {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.topNav{
+  text-align: center;
+  margin-top: 10px;
+}
+
+ul li {
+  display: inline;
 }
 
 .wrapper {
   max-width: 1150px;
   margin: 0px auto;
   /*background-color: #e3f2f9;*/
+  /*background-image: url(../images/woodgrain2.jpg);*/
+
 }
 
 /*Media accessibility stylings*/
