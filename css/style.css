@@ -10,111 +10,331 @@
   clear: both;
 }
 
-
 a {
-  color: white;
+  color: black;
   font-size: 20px;
   text-decoration: none;
   font-family: 'Raleway', 'Helvetica';
 }
 
-.block {
-  text-align: center;
-  margin: 100px;
+a:hover {
+  color: #DAB2BA;
 }
 
-h1 {
-  font-size: 200px;
+.block {
+  width: 50%;
+  height: calc(100vh);
+}
+
+.block h1 {
+  font-size: 150px;
   font-weight: 400;
   font-family:  'Stalemate', 'Helvetica';
 }
 
+.left {
+  text-align: center;
+  padding-top: 175px;
+  float: left;
+  background-color: #6ED0FF;
+}
+
+.right {
+  background-image: url(../images/mural.jpg);
+  background-size: cover;
+  float: right;
+}
+
+
+h1 {
+  font-size: 150px;
+  font-weight: 400;
+  font-family:  'Stalemate', 'Helvetica';
+}
 
 h2 {
   font-size: 20px;
   font-weight: 400;
   font-family: 'Raleway', 'Helvetica';
-  color: white;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .hero {
-  background-image: url(../images/background2.jpg);
-  background-size: cover;
-  color: white;
   height: calc(100vh);
-/* Hey future Emileigh: This is flex box. it lets you center things and is amazing!*/
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-/* Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
-  justify-content: space-between;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
+.insideNav {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 12px;
+  text-decoration: underline;
+}
 
 .list {
-  padding: 20px;
-  margin-bottom: 40px;
-
+  padding: 10px;
 }
 
 .main-text {
   width: 100%;
   padding: 20px;
-  height: 100px;
   text-align: justify;
   font-family: 'Raleway', 'Helvetica';
 }
 
-.navigation {
-  display: inline-flex;
-  margin: 15px;
+p {
+  font-family:  'Raleway', 'Helvetica';
+  font-size: 13px;
+  line-height: 150%;
+}
+
+.poem {
+  display: none;
+  background-color: #DAB2BA;
+  opacity: .7;
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.topBar {
+  clear: both;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+ul li {
+  display: inline;
 }
 
 .wrapper {
   max-width: 1150px;
   margin: 0px auto;
-  /*background-color: #e3f2f9;*/
 }
+
+
+
+
+/*Stylings for inside pages*/
+
+.aboutTopLeft {
+  background-image: url(../images/mural7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutTopRight {
+    background-color: #8CAFB1;
+    text-align: justify;
+}
+
+.aboutBottomLeft {
+    background-color: #D7D7DF;
+}
+
+.aboutBottomRight {
+  text-decoration: none;
+  font-family: 'Raleway', 'Helvetica';
+  font-weight: 400;
+}
+
+.blastFurnace {
+  background: url(../images/blastfurnace.jpg) no-repeat;
+  background-size: contain;
+  width: 150px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline:0;
+}
+
+.cleaver {
+  background: url(../images/cleaver.jpg) no-repeat;
+  background-size: contain;
+  width: 170px;
+}
+
+.contact {
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.cover {
+  height: inherit;
+  border: none;
+  margin-top:10px;
+}
+
+.inside {
+  width: 50%;
+  height: 315px;
+  padding: 30px;
+}
+
+.insideLeft {
+  float: left;
+}
+
+.insideRight {
+  float: right;
+}
+
+.leftText {
+  float: right;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.partners {
+  display: flex;
+  font-family: 'Raleway', 'Helvetica';
+  font-size: 13px;
+  line-height: 150%;
+  padding: 10px;
+}
+
+.projectsTopRight {
+    background-color: #D7D7DF;
+    text-align: justify;
+}
+
+.projectsBottomLeft {
+    background-color: #DAB2BA;
+}
+
+.rightText {
+  margin-top: 10px;
+  float: right;
+  width: 55%;
+  text-align: left;
+}
+
+
+.tbr {
+  background: url(../images/tbr.jpg) no-repeat;
+  background-size: contain;
+  width: 150px;
+}
+
+.wordsApart {
+  background: url(../images/wordsapart.jpg) no-repeat;
+  background-size: contain;
+  width: 170px;
+}
+
+
+
+
 
 /*Media accessibility stylings*/
 
 
-@media (max-width: 768px) {
-    .wrapper {
-        max-width: 768px;
-        margin: 0px auto;
-    }
+@media (max-width: 900px) {
 
-    h1  {
-       top: 10px;
-       font-size: 90px;
-    }
+  .block h1  {
+     top: 10px;
+     font-size: 120px;
+      }
+
+  .cover {
+      height: 150px;
+      width: 200px;
+      margin-top: 15px;
+      }
+
+   .inside {
+     width: 100%;
+     height: inherit;
+      }
 
     h2  {
-      top: 50px;
       font-size: 40px;
+      top: 50px;
+       }
+
+
+    .text {
+        float: right;
+        width: 60%;
+       }
+}
+
+
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+      margin: 0px auto;
+      max-width: 768px;
+      }
+
+    .left {
+      width: 100%
     }
+
+    .right {
+      display: none;
+      width: 100%;
+      }
+
+    .block h1  {
+      font-size: 120px;
+      top: 10px;
+      }
+
 
   }
 
 
 
+  @media (max-width: 560px) {
+      .text {
+        float: left;
+        width: 100%
+      }
+
+
+
+
   @media (max-width: 475px) {
       .wrapper {
-          max-width: 768px;
+          max-width: 475px;
           margin: 0px auto;
-      }
-
-      h1  {
-         top: 10px;
-         font-size: 50px;
-      }
-
-      h2  {
-        top: 50px;
-        font-size: 20px;
-      }
-
+        }
     }
+
+
+
+
+
+
+    /*.hero { THIS IS THE OLD HERO
+      background-image: url(../images/background2.jpg);
+      background-size: cover;
+      color: white;
+      height: calc(100vh);
+     Hey future Emileigh: This is flex box. it lets you center things and is amazing!
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+     Emileigh: you would add this to the above to make "Mike Kern" centered on the screen:
+      justify-content: space-between;
+    }*/
+
+    /* THIS IS THE OLD NAV
+    .nav-a-thingy {
+      background-color: #261F19;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }*/
